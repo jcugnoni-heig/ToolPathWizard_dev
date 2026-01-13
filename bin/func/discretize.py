@@ -325,7 +325,7 @@ def get_face(vertexGeom, surfaceGeom):
 
 
 def point_and_face(POI:cls_points_of_interest.info_point, surfaceGeom, curve:cls_curve):
-    print(f"point_and_face: create point at {POI.distOnWire}mm on curve {curve.curveId}")
+    #print(f"point_and_face: create point at {POI.distOnWire}mm on curve {curve.curveId}")
     vertexGeom = point_on_edge(POI.distOnEdge, POI.edgeGeom)
     try:
         faceGeom = get_face(vertexGeom, surfaceGeom)
